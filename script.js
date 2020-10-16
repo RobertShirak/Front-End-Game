@@ -69,19 +69,13 @@ function updateScore(){
          results.textContent = `${totalpercent}` + "% You got half right! Still failed though! You only got " + `${currentScore}` + " right!"
     }else if(currentScore === 15 || currentScore === 14 || currentScore === 13 || currentScore === 12 || currentScore === 11 || currentScore === 10 || currentScore === 9 || currentScore === 8 || currentScore === 7 || currentScore === 6 || currentScore === 5 || currentScore === 4){
         results.textContent = `${totalpercent}` + "% You should watch a different sport! You only got " + `${currentScore}` + " right!"
-    }else if(currentScore === 3){
+    }else if(currentScore === 3 || currentScore === 2 || currentScore === 1){
         results.textContent = `${totalpercent}` + "% Well now I'm embarressed for you! You only got " + `${currentScore}` + " right!" 
-    }else if(currentScore === 2){
-        results.textContent = `${totalpercent}` + "% Well now I'm embarressed for you! You only got " + `${currentScore}` + " right!"
-    }else if(currentScore === 1){
-        results.textContent= `${totalpercent}` + "% Well now I'm embarressed for you! You only got " + `${currentScore}` + "  right!"
     }else if(currentScore === 0){
         results.textContent = `${totalpercent}` + "% Well this is awkward ..."
     }
 
 }
-
-
 
 // if correct-answer is clicked console.log it to the console
 for(let i=0; i<correct.length; i++){

@@ -77,11 +77,11 @@ function updateScore(){
 
 }
 
-// if correct-answer is clicked console.log it to the console
+// if the correct answer is clicked call correctAnswer
 for(let i=0; i<correct.length; i++){
     correct[i].addEventListener('click', correctAnswer)
-    console.log('correct-answer') 
 }
+
 // if the console contains 'correct answer' update the score in the 
 // console log so updateScore function can keep track of how many are correct-answer
 function correctAnswer(e){
@@ -92,6 +92,7 @@ function correctAnswer(e){
 }
 
 // restart the game when restart-button is clicked
+// thank you google
 restartGame.addEventListener('click', restartTriviaGame)
 function restartTriviaGame(){
     window.location.reload(true); 
